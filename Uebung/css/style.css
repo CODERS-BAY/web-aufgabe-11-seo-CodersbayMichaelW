@@ -39,7 +39,7 @@ body {
     color: white;
     padding-left: 40px;
     box-sizing: border-box;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     transition: 0.4s;
 }
@@ -59,7 +59,7 @@ label #btn {
     left: 10px;
     top: 10px;
     font-size: 12px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 6px 12px;
     transition: all 0.5s;
 }
@@ -90,12 +90,10 @@ label #cancel:hover {
     margin-left: 250px;
 }
 
-
-
 /* Main */
 main {
-    margin-left: 10%;
-
+    margin-left: 7rem;
+    transition: all 0.5s ease;
 }
 
 h1, h2 {
@@ -142,5 +140,8 @@ img {
 @media (min-width: 700px) {
     img {
         max-width: 40vw;
+    }
+    #check:checked ~ main {
+        margin-left: 20rem;
     }
 }
