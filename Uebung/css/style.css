@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 90%;
+    background-color: rgb(248, 248, 248);
+    color: rgb(25, 25, 25);
+    font-family: 'Merriweather', Arial;
+}
+
+/* Header */
+/* navigation */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgb(4, 35, 49);
+    transition: all 0.5s ease;
+}
+.sidebar header {
+    font-size: 2rem;
+    color: rgb(0, 255, 255);
+    line-height: 70px;
+    text-align: center;
+    background: rgb(6, 49, 70);
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s;
+}
+ul li:hover a {
+    padding-left: 50px;
+} 
+#check {
+    display: none;
+}
+label #btn, label #cancel {
+    position: fixed;
+    background: rgb(4, 35, 49);
+    border-radius: 3px;
+    cursor: pointer;
+}
+label #btn {
+    left: 10px;
+    top: 10px;
+    font-size: 12px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+}
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: rgb(0, 255, 255);
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+label #cancel:hover {
+    color: rgb(255, 0, 0)
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+
+
+/* Main */
+main {
+    margin-left: 10%;
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    margin-top: 2rem;
+}
+h2 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+section {
+    margin-bottom: 5rem;
+}
+main section div:not(:first-of-type) {
+    margin-top: 2rem;
+}
+main section:last-of-type {
+    margin-bottom: 10rem;
+}
+
+main li {
+    margin: 0.5rem 0;
+}
+main p {
+    margin: 0.5rem 0;
+}
+code {
+    color: rgb(255, 0, 0);
+}
+
+img {
+    max-width: 60vw;
+    border: 1px solid rgb(25, 25, 25);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+
+    -moz-box-shadow: 10px 10px 5px rgb(204, 204, 204);
+    -webkit-box-shadow: 10px 10px 5px rgb(204, 204, 204);
+    box-shadow: 10px 10px 5px rgb(204, 204, 204);
+}
+
+@media (min-width: 700px) {
+    img {
+        max-width: 40vw;
+    }
+}
