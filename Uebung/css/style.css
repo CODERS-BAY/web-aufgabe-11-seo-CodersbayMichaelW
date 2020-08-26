@@ -24,6 +24,7 @@ img {
     box-shadow: 10px 10px 5px rgb(204, 204, 204);
 }
 .header-pic {
+    margin-top: 2rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
