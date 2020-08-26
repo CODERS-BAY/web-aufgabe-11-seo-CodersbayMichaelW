@@ -12,7 +12,24 @@ body {
     font-family: 'Merriweather', Arial;
 }
 
-/* Header */
+/* header-imgage */
+img {
+    max-width: 60vw;
+    border: 1px solid rgb(25, 25, 25);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+
+    -moz-box-shadow: 10px 10px 5px rgb(204, 204, 204);
+    -webkit-box-shadow: 10px 10px 5px rgb(204, 204, 204);
+    box-shadow: 10px 10px 5px rgb(204, 204, 204);
+}
+.header-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* navigation */
 .sidebar {
     position: fixed;
@@ -22,7 +39,7 @@ body {
     background: rgb(4, 35, 49);
     transition: all 0.5s ease;
 
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .sidebar li:last-of-type {
     padding-bottom: 40px;
@@ -106,10 +123,14 @@ h1, h2 {
 }
 h1 {
     margin-top: 2rem;
+    text-shadow: 5px -3px 5px rgba(150, 150, 150, 1);
 }
 h2 {
     margin-top: 5rem;
     margin-bottom: 3rem;
+
+    text-decoration: underline solid rgb(0, 255, 255); 
+    text-decoration-thickness: 2px;
 }
 section {
     margin-bottom: 5rem;
@@ -129,17 +150,6 @@ main p {
 }
 code {
     color: rgb(255, 0, 0);
-}
-
-img {
-    max-width: 60vw;
-    border: 1px solid rgb(25, 25, 25);
-    border-radius: 20px;
-    margin-bottom: 1rem;
-
-    -moz-box-shadow: 10px 10px 5px rgb(204, 204, 204);
-    -webkit-box-shadow: 10px 10px 5px rgb(204, 204, 204);
-    box-shadow: 10px 10px 5px rgb(204, 204, 204);
 }
 
 @media (min-width: 700px) {
