@@ -21,6 +21,11 @@ body {
     height: 100%;
     background: rgb(4, 35, 49);
     transition: all 0.5s ease;
+
+    overflow: scroll;
+}
+.sidebar li:last-of-type {
+    padding-bottom: 40px;
 }
 .sidebar header {
     font-size: 2rem;
