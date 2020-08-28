@@ -109,12 +109,12 @@ label #cancel:hover {
 #check:checked ~ label #cancel {
     left: 195px;
 }
-#check:checked ~ section {
+#check:checked ~ section:not(.main-body) {
     margin-left: 250px;
 }
 
 /* Main */
-main {
+.main-body {
     margin-left: 7rem;
     transition: all 0.5s ease;
 }
@@ -139,17 +139,17 @@ h3 {
 section {
     margin-bottom: 5rem;
 }
-main section div:not(:first-of-type) {
+.main-body section div:not(:first-of-type) {
     margin-top: 2rem;
 }
-main section:last-of-type {
+.main-body section:last-of-type {
     margin-bottom: 10rem;
 }
 
-main li {
+.main-body li {
     margin: 0.5rem 0;
 }
-main p {
+.main-body p {
     margin: 0.5rem 0;
 }
 code {
@@ -160,7 +160,7 @@ code {
     img {
         max-width: 40vw;
     }
-    #check:checked ~ main {
+    #check:checked ~ .main-body {
         margin-left: 20rem;
     }
 }
